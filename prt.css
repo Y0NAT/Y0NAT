@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+/*---BALISE---*/
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
@@ -49,67 +52,7 @@ header h1, header h2{
     font-size: xx-large;
     font-weight: bolder;
 }
-header h1{
-    animation: apparition 3s ease-out;
-}
-@keyframes apparition {
-    from{
-        opacity: 0;
-        transform: translateY(-100px)
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0px)
-    }
-    
-}
-header h2{
-    animation: apparition2 3.7s ease-out;
-}
 
-@keyframes apparition2 {
-    from{
-        opacity: 0;
-        transform: translateX(-1500px)
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px)
-    }
-    
-}
-section h2 {
-	color :  #014c6d;
-    font-style: oblique;
-    text-decoration: underline; 
-}
-
-
-.prfl{
-    text-align: right;
-}
-
-
-.prfl img{
-    width: 175px;
-    height: 175px;
-    border: 1px solid rgba(0, 0, 0, 0.438);
-    box-shadow: 0 0 0 rgba(0, 102, 255, 0.404);
-    border-radius: 50%;
-    margin: -100px auto 0;
-    animation: pulse 1.5s infinite;
-}  
-@keyframes pulse {
-    to{
-        box-shadow: 0 0 75px rgba(0, 238, 255, 0.6); 
-       /* border: 1.3px solid rgba(54, 55, 99, 0.712);*/
-    }
-}
-
-footer{
-    border-top: 2px solid rgb(255, 0, 0);
-    border-right: 2px solid rgb(255, 0, 0);
-}
 section{
     display: flex; 
     flex-flow: row wrap;
@@ -125,10 +68,34 @@ section{
 section h2{
     margin: 20px auto;
     width: 90%;
+    color :  #014c6d;
+    font-style: oblique;
+    text-decoration: underline; 
 }
 section > div{
     width: 95%;
 }
+footer{
+    border-top: 2px solid rgb(255, 0, 0);
+    border-right: 2px solid rgb(255, 0, 0);
+}
+
+            /*---CLASS-Profile---*/
+
+.prfl{
+    text-align: right;
+}
+.prfl img{
+    width: 175px;
+    height: 175px;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    box-shadow: 0 0 0 rgba(0, 102, 255, 0.404);
+    border-radius: 50%;
+    margin: -100px auto 0;
+}
+
+/*---CLASS-Presentation---*/
+
 .presentation{
     border-bottom: 2px dashed rgb(0, 0, 0);
 }
@@ -146,6 +113,9 @@ section > div{
   font-family: 'Courier New', Courier, monospace;
   color: #140202;
 }
+
+/*---CLASS-Contact---*/
+
 .contact-flex{
     display: flex;
     flex-flow: row wrap;
@@ -157,6 +127,9 @@ section > div{
 .contact-flex p:last-child{
     flex: 0 0 55%;
 }
+
+    /*---CLASS-experience---*/
+
 .exp{
     display: flex;
     flex-flow: row wrap;
@@ -186,6 +159,9 @@ section > div{
     font-size:  1em;
     font-weight: normal;
 }
+
+  /*---CLASS-Competence---*/
+
 .h3gauche{
     width: 90%;
 }
@@ -198,6 +174,9 @@ section > div{
 .comp p{
     flex: 0 0 40%;
 }
+
+/*---CLASS-Interet---*/
+
 .interet{
     flex: 0 1 50%;
     display: flex;
@@ -214,6 +193,48 @@ section > div{
     
 }
 
+/*---ANIMATION---*/
+
+header h1{
+    animation: apparition 3s ease-out;
+}
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+    
+}
+header h2{
+    animation: apparition2 3.7s ease-out;
+}
+
+@keyframes apparition2 {
+    from{
+        opacity: 0;
+        transform: translateX(-1500px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+    
+}
+.prfl img{
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    to{
+        box-shadow: 0 0 75px rgba(0, 238, 255, 0.6); 
+       /* border: 1.3px solid rgba(54, 55, 99, 0.712);*/
+    }
+}
+
+/*---MEDIA SCREEN---*/
 
 @media screen and (min-width: 980px){
     
