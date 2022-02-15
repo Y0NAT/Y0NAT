@@ -1,0 +1,280 @@
+.btn i{
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+header, footer{
+    display: flex; 
+    flex-flow: row wrap;
+   
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 18px rgb(68, 68, 68);
+    background-color: rgb(82, 82, 82);
+    border-radius: 10px;
+
+    /*
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 20px 50%;
+    background: url("img/head.jpg");
+    box-shadow: 0px 0px 0px rgb(122, 84, 122);
+    background-size: cover;
+    background-position: center;*/
+}
+header{
+    border-bottom: 2px solid rgb(255, 0, 0);
+    border-right: 2px solid rgb(255, 0, 0);
+    height: 100px;
+}
+header h1, header h2{
+    font-family: 'Ballet', cursive;
+    color: rgba(155, 0, 0, 0.726);
+    font-size: 1.5em;
+    width: 90%;
+    margin: 7.5px auto;
+    text-shadow: 0 0 0 rgb(3, 2, 2);
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+header h1{
+    animation: apparition 3s ease-out;
+}
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+    
+}
+header h2{
+    animation: apparition2 3.7s ease-out;
+}
+
+@keyframes apparition2 {
+    from{
+        opacity: 0;
+        transform: translateX(-1500px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+    
+}
+section h2 {
+	color :  #014c6d;
+    font-style: oblique;
+    text-decoration: underline; 
+}
+
+
+.prfl{
+    text-align: right;
+}
+
+
+.prfl img{
+    width: 175px;
+    height: 175px;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    box-shadow: 0 0 0 rgba(0, 102, 255, 0.404);
+    border-radius: 50%;
+    margin: -100px auto 0;
+    animation: pulse 1.5s infinite;
+}  
+@keyframes pulse {
+    to{
+        box-shadow: 0 0 75px rgba(0, 238, 255, 0.6); 
+       /* border: 1.3px solid rgba(54, 55, 99, 0.712);*/
+    }
+}
+
+footer{
+    border-top: 2px solid rgb(255, 0, 0);
+    border-right: 2px solid rgb(255, 0, 0);
+}
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+section h2{
+    margin: 20px auto;
+    width: 90%;
+}
+section > div{
+    width: 95%;
+}
+.presentation{
+    border-bottom: 2px dashed rgb(0, 0, 0);
+}
+.presentation a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: rgb(27, 3, 3);
+    background-color: #e70808;
+    box-shadow: 0px 0px 10px rgba(28, 63, 177, 0.411);
+    border-radius: 5px;
+}
+.presentation p{
+  font-family: 'Courier New', Courier, monospace;
+  color: #140202;
+}
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 45%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 55%;
+}
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp img{
+    width: 100%;
+}
+.exp h3{
+    font-size:  1.2em;
+}
+.exp h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+.h3gauche{
+    width: 90%;
+}
+.comp{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed black;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    
+}
+
+
+@media screen and (min-width: 980px){
+    
+    section, footer, header{
+        width: 80%;
+        box-shadow: 0px 0px 10px rgb(138, 126, 126);
+        background-position: center;
+    }
+    
+    header h1, header h2 {
+        width: 80%;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .presentation, .contact{
+        flex: 0 0 45%;
+    }
+    .presentation{
+        border-bottom: none;
+        border-right: 2px solid rgb(86, 243, 152);
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .presentation a{
+        border: 2px solid transparent;
+    }
+    .presentation a:hover{
+        color: rgb(27, 3, 3);
+        background-color: #000a8f;
+        border: 2px solid #00eeff8e;
+        box-shadow: 0px 0px 10px rgba(28, 63, 177, 0.411);
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .interet{
+        flex: 0 1 25%;
+    }
+}
